@@ -8,6 +8,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir aos -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      gsap.form('.display-4',{duration: 1, rotatey: 360, opacity: 0, ease : 'bounce'});
+    </script>
+   
+
     <!-- my css -->
     <link rel="stylesheet" href="style.css">
 
@@ -16,7 +26,7 @@
   </head>
   <body id="home">
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top " data-aos="fade-down" data-aos-duration="2000">
     <div class="container">
       <a class="navbar-brand" href="#">RIZKY NAGGALA UTAMA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,11 +46,14 @@
 <!-- akhir navbar -->
 
 <!-- jumbotron -->
-<section class="jumbotron text-center">
+<section class="jumbotron text-center" >
     <img src="img/LOGO NANGGALA.jpg" alt="PT. RIZKY NANGGALA UTAMA" width="200" 
-    class="rounded-circle img-thumbnail" >
-    <h1 class="fs-2">PT. RIZKY NANGGALA UTAMA</h1>
-    <p class="lead">Out Sourching | Jasa Keamanan</p>
+    class="rounded-circle img-thumbnail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+    <h1 class="fs-2" data-aos="fade-right" data-aos-duration="2000">PT. RIZKY NANGGALA UTAMA</h1>
+    <p class="lead" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="2000">Out Sourching | Jasa Keamanan</p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L15,80C30,128,60,224,90,224C120,224,150,128,180,117.3C210,107,240,181,270,186.7C300,192,330,128,360,96C390,64,420,64,450,64C480,64,510,64,540,96C570,128,600,192,630,213.3C660,235,690,213,720,213.3C750,213,780,235,810,240C840,245,870,235,900,213.3C930,192,960,160,990,160C1020,160,1050,192,1080,213.3C1110,235,1140,245,1170,224C1200,203,1230,149,1260,133.3C1290,117,1320,139,1350,165.3C1380,192,1410,224,1425,240L1440,256L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
 </section>
 <!-- akhir jumbotron -->
@@ -49,15 +62,15 @@
 <section id="about">
 <div class="container">
     <div class="row text-center mb-4">
-        <div class="col">
+        <div class="col" data-aos="fade-down" data-aos-duration="1000">
             <h2>About</h2>
         </div>
     </div>
     <div class="row row justify-content-evenly fs-5 text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right"  data-aos-duration="1000">
             <p>PT. RIZKY NANGGALA UTAMA adalah perusahaan pelayanan Jasa Outsourcing yang bergerak dibidang Jasa Pengamanan (SATPAM) yang berdomisili di Kota Bandung dan berdiri sejak 2019. Perusahaan kami baru berdiri namun pengalaman kami dalam kepengurusan Jasa Pengamanan sejak 2002.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="200">
             <p>PT. Rizky Nanggala Utama akan memberikan pelayanan terbaik sesuai dengan apa yang diharapkan oleh klien. Kami juga didukung oleh tenaga ahli dan Profesional sehingga menghasilkan kualitas terbaik yang akan diberikan kepada klien</p>
         </div>
     </div>
@@ -70,15 +83,15 @@
 <section id="vismis">
     <div class="containetr">
         <div class="row text-center mb-4">
-            <div class="col">
+            <div class="col" data-aos="fade-down" data-aos-duration="1000">
                 <h2>visi & Misi</h2>
             </div>
         </div>
         <div class="row row justify-content-evenly fs-5 text-center">
-            <div class="col-md-4 ">
+            <div class="col-md-4 " data-aos="fade-right"  data-aos-duration="1000">
                 <p>Visi kita adalah memberikan pelayanan terbaik untuk anda sesuai dengan apa yang anda harapkan sehingga anda tau bahwa kami ada</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="200">
                 <p>Ide bisnis kami mendukung visi karena kami ingin menjadi perusahaan yang maju dengan profesionalisme tinggi</p>
             </div>
         </div>
@@ -91,13 +104,13 @@
 <section id="project">
     <div class="container">
         <div class="row text-center mb-4">
-            <div class="col">
+            <div class="col" data-aos="fade-down" data-aos-duration="1000">
                 <h2>Project</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="500">
                     <img src="img/project/1.jpg" class="card-img-top" alt="project1">
                     <div class="card-body">
                       <p class="card-text">Olah Raga</p>
@@ -105,7 +118,7 @@
                   </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                     <img src="img/project/3.jpg" class="card-img-top" alt="project3">
                     <div class="card-body">
                       <p class="card-text">Latihan Damkar</p>
@@ -113,7 +126,7 @@
                   </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
                     <img src="img/project/7.jpg" class="card-img-top" alt="project7">
                     <div class="card-body">
                       <p class="card-text">Pelayanan Publik</p>
@@ -123,7 +136,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="500">
                     <img src="img/project/8.jpg" class="card-img-top" alt="project8">
                     <div class="card-body">
                       <p class="card-text">Pengamanan Kunjungan Dinas</p>
@@ -131,7 +144,7 @@
                   </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                     <img src="img/project/9.jpg" class="card-img-top" alt="project9">
                     <div class="card-body">
                       <p class="card-text">Pengamanan Demo</p>
@@ -139,7 +152,7 @@
                   </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
                     <img src="img/project/10.jpg" class="card-img-top" alt="project10">
                     <div class="card-body">
                       <p class="card-text">latihan Beladiri</p>
@@ -149,7 +162,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
                 <img src="img/project/14.jpg" class="card-img-top" alt="project14">
                 <div class="card-body">
                   <p class="card-text">Pelatihan Satpam</p>
@@ -157,7 +170,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                     <img src="img/project/16.jpg" class="card-img-top" alt="project16">
                     <div class="card-body">
                       <p class="card-text">Apel Bulanan</p>
@@ -165,7 +178,7 @@
                   </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
                     <img src="img/project/18.jpg" class="card-img-top" alt="project18">
                     <div class="card-body">
                       <p class="card-text">Olahraga Pagi</p>
@@ -181,12 +194,13 @@
 <!-- contact -->
 <section id="contact">
     <div class="container">
-        <div class="row text-center mb-3">
-            <div class="col">
+        <div class="row text-center mb-3" data-aos="fade-down" data-aos-duration="1000">
+            <div class="col" >
                 <h2>Contact Us</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
             <div class="col-md-4">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -202,7 +216,8 @@
                   </div>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="2500">
             <div class="col-md-4">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -218,7 +233,8 @@
                   </div>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
             <div class="col-md-4">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -243,6 +259,11 @@
     <p>PT. RIZKY NANGGALA UTAMA</p>
 </footer>
 <!-- akhir footer -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 
